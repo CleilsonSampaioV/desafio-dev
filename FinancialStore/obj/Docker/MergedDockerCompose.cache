@@ -1,0 +1,69 @@
+name: dockercompose17219445580369766812
+services:
+  financialTransactionDb:
+    container_name: financialTransactionDb
+    environment:
+      POSTGRES_DB: FinancialTransactionDb
+      POSTGRES_PASSWORD: admin1234
+      POSTGRES_USER: admin
+    image: postgres
+    networks:
+      default: null
+    ports:
+    - mode: ingress
+      target: 5432
+      published: "5432"
+      protocol: tcp
+    restart: always
+    volumes:
+    - type: volume
+      source: postgres_data
+      target: /var/lib/postgresql/data
+      volume: {}
+  financialstore.api:
+    build:
+      context: C:\estudo\praticas\desafio-dev\FinancialStore
+      dockerfile: src/FinancialStore.API/Dockerfile
+    container_name: financialstore.api
+    depends_on:
+      financialTransactionDb:
+        condition: service_started
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ConnectionStrings:DefaultConnection: Server=financialTransactionDb;Port=5432;Database=FinancialTransactionDb;User
+        Id=admin;Password=admin1234;
+    image: financialstoreapi
+    networks:
+      default: null
+    ports:
+    - mode: ingress
+      target: 80
+      published: "8100"
+      protocol: tcp
+  pgadmin:
+    container_name: pgadmin
+    environment:
+      PGADMIN_DEFAULT_EMAIL: admin@admin.com
+      PGADMIN_DEFAULT_PASSWORD: admin1234
+    image: dpage/pgadmin4
+    networks:
+      default: null
+    ports:
+    - mode: ingress
+      target: 80
+      published: "5050"
+      protocol: tcp
+    restart: always
+    volumes:
+    - type: volume
+      source: pgadmin_data
+      target: /root/.pgadmin
+      volume: {}
+networks:
+  default:
+    name: dockercompose17219445580369766812_default
+volumes:
+  pgadmin_data:
+    name: dockercompose17219445580369766812_pgadmin_data
+  postgres_data:
+    name: dockercompose17219445580369766812_postgres_data

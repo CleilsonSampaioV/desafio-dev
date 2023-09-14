@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "Vcw2FKHxqYAygjAAZRTIfFZfh/aCm99YFrf0XQkSfFm0U8TiCGezsQwS0Dd1JsKN37TlHdcDc2Tr00FpLQyuYg==",
+  "dgSpecHash": "mCrpgDYeqr1tQsGXmi0y05yc5PyGrtlczCblKY8SGfi2IEj/qxK8puvQNv4BQbxTxeg2wvA3DfpfiLdsHNktUA==",
   "success": true,
   "projectFilePath": "C:\\estudo\\praticas\\desafio-dev\\FinancialStore\\src\\FinancialStore.Contracts\\FinancialStore.Contracts.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\jclei\\.nuget\\packages\\mediatr\\9.0.0\\mediatr.9.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

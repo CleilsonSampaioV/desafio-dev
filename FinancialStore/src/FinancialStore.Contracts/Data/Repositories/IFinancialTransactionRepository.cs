@@ -4,5 +4,5 @@ namespace FinancialStore.Contracts.Data.Repositories;
 
 public interface IFinancialTransactionRepository : IBaseRepository<FinancialTransaction>
 {
-    IEnumerable<FinancialTransaction> GetAllByStoreName();
+    IEnumerable<FinancialTransaction> GetAllWithFinancialTransactionType();
 }

@@ -1,9 +1,17 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net7.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
   </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="7.0.4" />
+  </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\FinancialStore.Contracts\FinancialStore.Contracts.csproj" />
+    <ProjectReference Include="..\FinancialStore.Migrations\FinancialStore.Migrations.csproj" />
+  </ItemGroup>
+	
 </Project>

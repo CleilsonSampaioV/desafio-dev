@@ -1,0 +1,41 @@
+<div class="container text-center">
+  <div class="row">
+
+
+    <div class="col-6 pb-5">
+      <input type="file" (change)="onFileSelected($event)">
+    </div>
+    <div class="col-6">
+      <button type="button" class="btn btn-danger" (click)="ClearData()">Limpar dados</button>
+    </div>
+  </div>
+  <div class="row">
+    <table *ngIf="fileContent.length > 0" class="table table-bordered border-primary">
+      <thead>
+        <tr>
+          <th>Type</th>
+          <th>Date</th>
+          <th>Value</th>
+          <th>Cpf</th>
+          <th>CardNumber</th>
+          <th>Hour</th>
+          <th>StoreOwner</th>
+          <th>StoreName</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let data of transactions">
+          <td>{{ data.Type }}</td>
+          <td>{{ data.Date }}</td>
+          <td>{{ data.Value }}</td>
+          <td>{{ data.Cpf }}</td>
+          <td>{{ data.CardNumber }}</td>
+          <td>{{ data.Hour }}</td>
+          <td>{{ data.StoreOwner }}</td>
+          <td>{{ data.StoreName }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <button type="button" class="btn btn-primary" (click)="SendData()" >Enviar dados</button>
+</div>

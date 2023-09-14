@@ -1,0 +1,18 @@
+version: '3.4'
+
+services:
+  financialTransactionDb:
+    image: postgres
+
+  pgadmin:
+    image: dpage/pgadmin4
+
+  financialstore.api:
+    image: ${DOCKER_REGISTRY-}financialstoreapi
+    build:
+      context: .
+      dockerfile: src/FinancialStore.API/Dockerfile
+ 
+volumes:
+  postgres_data:
+  pgadmin_data:

@@ -1,0 +1,2 @@
+C:\estudo\praticas\desafio-dev\FinancialStore\src\FinancialStore.App\obj\Debug\FinancialStore.App.esproj.SuggestedBindingRedirects.cache
+C:\estudo\praticas\desafio-dev\FinancialStore\src\FinancialStore.App\obj\Debug\FinancialStore.App.esproj.CoreCompileInputs.cache

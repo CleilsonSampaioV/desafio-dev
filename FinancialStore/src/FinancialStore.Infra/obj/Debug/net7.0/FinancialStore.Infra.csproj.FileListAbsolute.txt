@@ -1,11 +1,16 @@
 C:\estudo\praticas\desafio-dev\FinancialStore\src\FinancialStore.Infra\bin\Debug\net7.0\FinancialStore.Infra.deps.json
 C:\estudo\praticas\desafio-dev\FinancialStore\src\FinancialStore.Infra\bin\Debug\net7.0\FinancialStore.Infra.dll
 C:\estudo\praticas\desafio-dev\FinancialStore\src\FinancialStore.Infra\bin\Debug\net7.0\FinancialStore.Infra.pdb
+C:\estudo\praticas\desafio-dev\FinancialStore\src\FinancialStore.Infra\bin\Debug\net7.0\FinancialStore.Contracts.dll
+C:\estudo\praticas\desafio-dev\FinancialStore\src\FinancialStore.Infra\bin\Debug\net7.0\FinancialStore.Migrations.dll
+C:\estudo\praticas\desafio-dev\FinancialStore\src\FinancialStore.Infra\bin\Debug\net7.0\FinancialStore.Contracts.pdb
+C:\estudo\praticas\desafio-dev\FinancialStore\src\FinancialStore.Infra\bin\Debug\net7.0\FinancialStore.Migrations.pdb
 C:\estudo\praticas\desafio-dev\FinancialStore\src\FinancialStore.Infra\obj\Debug\net7.0\FinancialStore.Infra.csproj.AssemblyReference.cache
 C:\estudo\praticas\desafio-dev\FinancialStore\src\FinancialStore.Infra\obj\Debug\net7.0\FinancialStore.Infra.GeneratedMSBuildEditorConfig.editorconfig
 C:\estudo\praticas\desafio-dev\FinancialStore\src\FinancialStore.Infra\obj\Debug\net7.0\FinancialStore.Infra.AssemblyInfoInputs.cache
 C:\estudo\praticas\desafio-dev\FinancialStore\src\FinancialStore.Infra\obj\Debug\net7.0\FinancialStore.Infra.AssemblyInfo.cs
 C:\estudo\praticas\desafio-dev\FinancialStore\src\FinancialStore.Infra\obj\Debug\net7.0\FinancialStore.Infra.csproj.CoreCompileInputs.cache
+C:\estudo\praticas\desafio-dev\FinancialStore\src\FinancialStore.Infra\obj\Debug\net7.0\FinancialStore.Infra.csproj.CopyComplete
 C:\estudo\praticas\desafio-dev\FinancialStore\src\FinancialStore.Infra\obj\Debug\net7.0\FinancialStore.Infra.dll
 C:\estudo\praticas\desafio-dev\FinancialStore\src\FinancialStore.Infra\obj\Debug\net7.0\refint\FinancialStore.Infra.dll
 C:\estudo\praticas\desafio-dev\FinancialStore\src\FinancialStore.Infra\obj\Debug\net7.0\FinancialStore.Infra.pdb

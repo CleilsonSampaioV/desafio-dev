@@ -3,11 +3,11 @@
 public record FinancialTransactionDTO
 {
     public int Type { get; init; }
-    public DateTime Date { get; private set; }
-    public double Value { get; private set; }
-    public string Cpf { get; private set; }
-    public string CardNumber { get; private set; }
-    public TimeSpan Hour { get; private set; }
-    public string StoreOwner { get; private set; }
-    public int StoreName { get; private set; }
+    public string Date { get; init; }
+    public string Value { get; init; }
+    public string Cpf { get; init; }
+    public string CardNumber { get; init; }
+    public string Hour { get; init; }
+    public string StoreOwner { get; init; }
+    public string StoreName { get; init; }
 }

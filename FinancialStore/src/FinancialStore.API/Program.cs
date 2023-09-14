@@ -1,3 +1,9 @@
+using FinancialStore.Core;
+using FinancialStore.Infra;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.OpenApi.Models;
+
 var builder = WebApplication.CreateBuilder(args);
 
 ConfigureServices(
@@ -20,9 +26,29 @@ static void ConfigureServices(
     IConfiguration configuration
 )
 {
+    services.AddPersistence(configuration);
+    services.AddCore();
+
+    services.AddCors(options =>
+    {
+        options.AddDefaultPolicy(builder =>
+        {
+            builder.AllowAnyOrigin()
+                   .AllowAnyHeader()
+                   .AllowAnyMethod();
+        });
+    });
+
+    services.Configure<ApiBehaviorOptions>(options =>
+    {
+        options.SuppressModelStateInvalidFilter = true;
+    });
     services.AddControllers();
     services.AddEndpointsApiExplorer();
-    services.AddSwaggerGen();
+    services.AddSwaggerGen(c =>
+    {
+        c.SwaggerDoc("v1", new OpenApiInfo { Title = "Financial Transaction API", Description = "", Version = "v1" });
+    });
 }
 
 static void Configure(
@@ -31,16 +57,25 @@ static void Configure(
     IConfiguration configuration
 )
 {
-    // Configure the HTTP request pipeline.
     if (env.IsDevelopment())
     {
-        app.UseSwagger();
-        app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "FinancialStore.API v1"));
+        app.UseDeveloperExceptionPage();
     }
+
+    app.UseHttpsRedirection();
+
+    app.UseCors();
+
+    app.UseSwagger();
+    app.UseSwaggerUI(c =>
+    {
+        c.SwaggerEndpoint("/swagger/v1/swagger.json", "Financial Transaction API v1");
+    });
+
     app.UseRouting();
 
     app.UseEndpoints(endpoints =>
     {
-        endpoints.MapControllers();
+        endpoints.MapDefaultControllerRoute();
     });
 }

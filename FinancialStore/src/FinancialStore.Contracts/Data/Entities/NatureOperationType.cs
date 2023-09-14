@@ -1,6 +1,8 @@
-﻿namespace FinancialStore.Contracts.Data.Entities;
-public enum NatureOperationType
+﻿namespace FinancialStore.Contracts.Data.Entities
 {
-    Saída = 0,
-    Entrada = 1
+    public enum NatureOperationType
+    {
+        Expense = 0,
+        Income = 1
+    }
 }

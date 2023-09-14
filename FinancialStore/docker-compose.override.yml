@@ -1,0 +1,35 @@
+version: '3.4'
+
+services:
+  financialTransactionDb:
+     container_name: financialTransactionDb
+     environment:
+      - POSTGRES_USER=admin
+      - POSTGRES_PASSWORD=admin1234
+      - POSTGRES_DB=FinancialTransactionDb
+     restart: always
+     ports:
+       - "5432:5432"
+     volumes:
+       - postgres_data:/var/lib/postgresql/data/
+  pgadmin:
+    container_name: pgadmin
+    environment:
+     - PGADMIN_DEFAULT_EMAIL=admin@admin.com
+     - PGADMIN_DEFAULT_PASSWORD=admin1234
+    volumes:
+     - pgadmin_data:/root/.pgadmin
+    ports:
+      - "5050:80"
+    restart: always
+   
+
+  financialstore.api:
+    container_name: financialstore.api
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - "ConnectionStrings:DefaultConnection=Server=financialTransactionDb;Port=5432;Database=FinancialTransactionDb;User Id=admin;Password=admin1234;"
+    depends_on:
+      - financialTransactionDb
+    ports:
+      - "8100:80"

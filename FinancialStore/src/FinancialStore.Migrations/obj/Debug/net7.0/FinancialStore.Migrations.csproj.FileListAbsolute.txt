@@ -1,12 +1,17 @@
 C:\estudo\praticas\desafio-dev\FinancialStore\src\FinancialStore.Migrations\bin\Debug\net7.0\FinancialStore.Migrations.deps.json
+C:\estudo\praticas\desafio-dev\FinancialStore\src\FinancialStore.Migrations\bin\Debug\net7.0\FinancialStore.Migrations.runtimeconfig.json
 C:\estudo\praticas\desafio-dev\FinancialStore\src\FinancialStore.Migrations\bin\Debug\net7.0\FinancialStore.Migrations.dll
 C:\estudo\praticas\desafio-dev\FinancialStore\src\FinancialStore.Migrations\bin\Debug\net7.0\FinancialStore.Migrations.pdb
+C:\estudo\praticas\desafio-dev\FinancialStore\src\FinancialStore.Migrations\bin\Debug\net7.0\FinancialStore.Contracts.dll
+C:\estudo\praticas\desafio-dev\FinancialStore\src\FinancialStore.Migrations\bin\Debug\net7.0\FinancialStore.Contracts.pdb
 C:\estudo\praticas\desafio-dev\FinancialStore\src\FinancialStore.Migrations\obj\Debug\net7.0\FinancialStore.Migrations.csproj.AssemblyReference.cache
 C:\estudo\praticas\desafio-dev\FinancialStore\src\FinancialStore.Migrations\obj\Debug\net7.0\FinancialStore.Migrations.GeneratedMSBuildEditorConfig.editorconfig
 C:\estudo\praticas\desafio-dev\FinancialStore\src\FinancialStore.Migrations\obj\Debug\net7.0\FinancialStore.Migrations.AssemblyInfoInputs.cache
 C:\estudo\praticas\desafio-dev\FinancialStore\src\FinancialStore.Migrations\obj\Debug\net7.0\FinancialStore.Migrations.AssemblyInfo.cs
 C:\estudo\praticas\desafio-dev\FinancialStore\src\FinancialStore.Migrations\obj\Debug\net7.0\FinancialStore.Migrations.csproj.CoreCompileInputs.cache
+C:\estudo\praticas\desafio-dev\FinancialStore\src\FinancialStore.Migrations\obj\Debug\net7.0\FinancialStore.Migrations.csproj.CopyComplete
 C:\estudo\praticas\desafio-dev\FinancialStore\src\FinancialStore.Migrations\obj\Debug\net7.0\FinancialStore.Migrations.dll
 C:\estudo\praticas\desafio-dev\FinancialStore\src\FinancialStore.Migrations\obj\Debug\net7.0\refint\FinancialStore.Migrations.dll
 C:\estudo\praticas\desafio-dev\FinancialStore\src\FinancialStore.Migrations\obj\Debug\net7.0\FinancialStore.Migrations.pdb
+C:\estudo\praticas\desafio-dev\FinancialStore\src\FinancialStore.Migrations\obj\Debug\net7.0\FinancialStore.Migrations.genruntimeconfig.cache
 C:\estudo\praticas\desafio-dev\FinancialStore\src\FinancialStore.Migrations\obj\Debug\net7.0\ref\FinancialStore.Migrations.dll
